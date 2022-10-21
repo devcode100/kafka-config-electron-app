@@ -1,0 +1,21 @@
+<div class="container">
+  <!-- Cards with media area -->
+  <mat-card class="example-card">
+    <mat-card-title-group>
+      <mat-card-title><span style="color: seagreen;">Kafka Configuration Rule Generator</span></mat-card-title>
+    </mat-card-title-group>
+    <mat-card-content>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <formly-form [form]="form" [model]="model" [fields]="fields">
+        </formly-form>
+        <button style="margin-right: 5px;" type="submit" color="primary" mat-raised-button>
+          Submit
+        </button>
+        <button type="reset" color="warn" mat-raised-button>
+          Reset
+        </button>
+
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
